@@ -1,0 +1,90 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "addgame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "gameid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "isenable",
+                    "type": "bool"
+                },
+                {
+                    "name": "gamename",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "games_struct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "gameid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "isenabled",
+                    "type": "bool"
+                },
+                {
+                    "name": "gamename",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "sayhello",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "user1",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addgame",
+            "type": "addgame",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "sayhello",
+            "type": "sayhello",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "games",
+            "type": "games_struct",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
